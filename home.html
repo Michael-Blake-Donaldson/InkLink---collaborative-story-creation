@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InkLink</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+<nav id="navbar">
+    <ul class="navbar-items flexbox-col">
+      <li class="navbar-logo flexbox-left">
+        <a class="navbar-item-inner flexbox">
+          <img src="assets/InkLink Logo.png" class="logo" alt="">
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a class="navbar-item-inner flexbox-left">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <i class="fa fa-search"></i>
+          </div>
+          <span class="link-text">Search</span>
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a class="navbar-item-inner flexbox-left">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <i class="fa fa-home"></i>
+          </div>
+          <span class="link-text">Home</span>
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a class="navbar-item-inner flexbox-left">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <i class="fa fa-dashboard"></i>
+          </div>
+          <span class="link-text">Dashboard</span>
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a class="navbar-item-inner flexbox-left">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <i class="fa-solid fa-people-group"></i>
+          </div>
+          <span class="link-text">Collaborate</span>
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a class="navbar-item-inner flexbox-left">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <i class="fa-solid fa-gear"></i>
+          </div>
+          <span class="link-text">Settings</span>
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a class="navbar-item-inner flexbox-left">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+          </div>
+          <span class="link-text">Login/SignUp</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+    </header>
+
+   <!-- Main Content -->
+   <main id="home">
+    <!-- Website Name -->
+    <section class="site-title">
+        <h1>InkLink</h1>
+    </section>
+
+    <!-- Slideshow for Featured Stories -->
+    <section class="featured-stories">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="assets/homepageSlideshow/AS.webp" style="width:100%">
+                <div class="text">Story 1</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="assets/homepageSlideshow/BudgetBee.png" style="width:100%">
+                <div class="text">Story 2</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="assets/homepageSlideshow/DRASTIClogo.png" style="width:100%">
+                <div class="text">Story 3</div>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+</main>
+
+</body>
+<script src="https://kit.fontawesome.com/e4529ceb03.js" crossorigin="anonymous"></script>
+<script src="scripts/slideshow.js"></script>
+</html>
